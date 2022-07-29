@@ -1,0 +1,23 @@
+{
+  "name": "handbook-frontend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@vuepress/plugin-pwa": "^1.9.7"
+  }
+}
