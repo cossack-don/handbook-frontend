@@ -3,7 +3,7 @@ home: true
 tagline: 
 actionText: Быстрые старты →
 actionLink: /guide/
-heroImage: home.png
+heroImage: test.svg
 features:
 - title: Vue 3
   details: описание

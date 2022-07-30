@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Справочник Frontendera',
+  title: 'Road to the IT',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -45,31 +45,31 @@ module.exports = {
     // search: true,
     nav: [
       {
-        text: 'Курс',
+        text: 'Инструкция по справочнику',
         link: '/guide/',
       },
       {
-        text: 'React',
-        link: '/react/',
+        text: 'J\n\navascript',
+        link: '/javascript/',
       },
       {
         text: 'Vue',
         link: '/vue/',
       },
       {
-        text: 'javascript',
-        link: '/javascript/',
+        text: 'React',
+        link: '/react/',
       },
       {
         text: 'TypeScript',
         link: '/typescript/',
       },
       {
-        text: 'Tests',
+        text: 'Unit Tests',
         link: '/tests/',
       },
       {
-        text: 'Полезные ссылки',
+        text: 'Прочитал на lern.js',
         link: '/config/'
       },
     ],

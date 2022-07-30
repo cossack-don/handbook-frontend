@@ -3,9 +3,9 @@
   "short_name": "PWA Site",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "home.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "home.png"
     }
   ],
   "start_url": "/guide/",
