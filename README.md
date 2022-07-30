@@ -26,3 +26,14 @@
     <li>test - Изменения касающиеся тестов</li>
     <li>chore - Все, что не подходит по типы выше</li>
 </ul>
+
+# Инструкция по deploy
+1. находимся в main branch (local)
+2. изменили файлы любые
+3. сделали npm run build
+4. git add . && git commit (сохранили исходники и собранный билд)
+5. git push (отправили в удаленный repo-main-branch)
+6. находимся так же в main branch (local)
+7. git subtree push --prefix src/.vuepress/dist origin test
+берём из main branch, нашу папку dist, а точней файлы, что  ней лежат
+и заливаем в нужную нам ветку (src/.vuepress/dist - путь где лежит папка, test - имя ветки куда скопировать файлы)
