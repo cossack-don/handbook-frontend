@@ -19,7 +19,7 @@ module.exports = {
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     // ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     // ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/home.png' }],
     ['link', { rel: 'icon', href: 'favicon.ico', type: 'image/x-icon' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -57,8 +57,12 @@ module.exports = {
         link: '/vue/',
       },
       {
-        text: 'JavaScript',
+        text: 'javascript',
         link: '/javascript/',
+      },
+      {
+        text: 'TypeScript',
+        link: '/typescript/',
       },
       {
         text: 'Tests',
@@ -100,10 +104,25 @@ module.exports = {
       ],
       '/javascript/': [
         {
-          title: 'JavaScript',
+          title: 'Javascript',
           collapsable: false,
           children: [
-            '',
+            '/javascript/1'
+          ]
+        }
+      ],
+      '/typescript/': [
+        {
+          title: 'TypeScript',
+          collapsable: false,
+          children: [
+            '/typescript/1',
+            '/typescript/2',
+            '/typescript/3',
+            '/typescript/4',
+            '/typescript/5',
+            '/typescript/6',
+            '/typescript/7',
           ]
         }
       ],
@@ -134,6 +153,6 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
   ],
 
-base:'/frontend/'
+base:'/handbook-frontend/'
 
 }
