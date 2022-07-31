@@ -49,7 +49,7 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'J\n\navascript',
+        text: 'Javascript',
         link: '/javascript/',
       },
       {
@@ -74,6 +74,17 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/config/': [
+        {
+          title: 'Интересные инструменты',
+          collapsable: false,
+          children: [
+            '',
+            '/config/usefulServices',
+          ]
+        },
+
+      ],
       '/guide/': [
         {
           title: 'Введение',
