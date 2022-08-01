@@ -118,7 +118,8 @@ module.exports = {
           title: 'Javascript',
           collapsable: false,
           children: [
-            '/javascript/1'
+            '/javascript/1',
+            '/javascript/objects'
           ]
         }
       ],
