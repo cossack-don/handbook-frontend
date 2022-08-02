@@ -4,12 +4,13 @@
 
 ### Разделы:
 <ul>
+    <li>Инструкция по справочнику</li>
     <li>JavaScript ES6</li>
     <li>Vue 3</li>
-    <li>Unit Testing</li>
     <li>React</li>
     <li>TypeScript</li>
-    <li>Список интересных инструментов</li>
+    <li>Unit Testing</li>
+    <li>Интересных инструментов</li>
 </ul>
 
 ### Разрабатывается на правилах коммитов:
