@@ -65,7 +65,7 @@ module.exports = {
         link: '/typescript/',
       },
       {
-        text: 'Unit Tests',
+        text: 'Unit tests',
         link: '/tests/',
       },
       {
@@ -79,7 +79,7 @@ module.exports = {
           title: 'Интересные инструменты',
           collapsable: false,
           children: [
-            '',
+            '/config/checkList',
             '/config/usefulServices',
           ]
         },
@@ -140,7 +140,7 @@ module.exports = {
       ],
       '/tests/': [
         {
-          title: 'Tests',
+          title: 'tests',
           collapsable: false,
           children: [
             '',
