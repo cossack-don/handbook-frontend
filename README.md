@@ -1,4 +1,4 @@
-# Cправочник для frontend-разработчика
+# Cправочник для frontend-разработчика (основной пакет уроков, по тому, что чаще всего используется на практике)
 
 ### <a href="https://cossack-don.github.io/handbook-frontend/" target="_blank">Handbook-frontend prodaction<a/>
 
