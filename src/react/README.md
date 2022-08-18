@@ -1,3 +1,3 @@
 # React
 
-page react
+Русская документация - https://ru.reactjs.org/
