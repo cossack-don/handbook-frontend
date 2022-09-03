@@ -1,6 +1,7 @@
-# job react
+# job react developer
 
 Что актуально на рынке по стеку:
+
 - React, 
 - Redux-MobX, 
 - React Router, 
