@@ -1,1 +1,0 @@
-http://golang-book.ru/
