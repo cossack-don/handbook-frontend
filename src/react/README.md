@@ -1,9 +1,10 @@
 # React
 
-https://reactdev.ru/ - учебник
+- React - https://reactjs.org/ 
+- React Routers - https://reactrouter.com/ru/main
+- Redux - https://redux.js.org/ (state container)
+- React ru book - https://reactdev.ru/
 
-<br>
-Русская документация - https://ru.reactjs.org/
 <br>
 философия реакт - https://ru.reactjs.org/docs/thinking-in-react.html
 <br>
