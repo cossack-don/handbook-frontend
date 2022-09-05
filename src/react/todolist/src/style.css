@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  margin: 15px auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: gray;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.id {
+  display: block;
+  color: rgb(91, 235, 139);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 100px;
+  background-color: rgb(91, 235, 139);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+.button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgb(71, 190, 111);
+}
+
+.button:disabled {
+  background-color: rgb(101, 105, 102);
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px rgb(91, 235, 139);
+  margin-right: 15px;
+}
+
+.quantity {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
