@@ -1,6 +1,6 @@
 # Разные инструменты и ресурсы
 
-- https://doka.guide/ - Дока от яндекса по Frontend
+
 - https://www.heroku.com/ - Сервис для деплоя бекенд приложений
 - https://stackblitz.com/ Онлайн IDE
 - web components - Stencil - https://stenciljs.com/ (tutorial - https://www.youtube.com/playlist?list=PL1t38ZFD37GocR8Ujv_PGE95okFjSs9N1 )
