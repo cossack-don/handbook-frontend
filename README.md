@@ -1,11 +1,10 @@
-# Пакет-справочник уроков по Front-end, Back-end разработки. <br/> (Что необходимо в первую очередь при разработке)
+# Базовый пакет знаний по Front-end, Back-end разработки.
 
 
 ### <a href="https://cossack-don.github.io/handbook-frontend/" target="_blank">Handbook-frontend prodaction<a/>
 
 ### Разделы:
 <ul>
-    <li>Инструкция по справочнику</li>
     <li>JavaScript ES6</li>
     <li>Vue 3</li>
     <li>React</li>
