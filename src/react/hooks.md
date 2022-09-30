@@ -1,5 +1,12 @@
 # Хуки в React
 
+## Часто используемые
+
+
+
+## Редко используемые
+
+
 - useEffect - асинхронный (наподобие жизненного цикла компонента, как во Vue)
 - useState - изменение значения стейта
 - useLayoutEffet - синхронный
@@ -9,6 +16,8 @@
 - useReducer - 
 - useRef - как во vue ref - вместо document.querySelector
 - useImperativeHandle - 
+
+https://my-js.org/docs/cheatsheet/react-hooks/
 
 https://habr.com/ru/company/simbirsoft/blog/652321/?ysclid=l8on7x5v2c251124060
 
