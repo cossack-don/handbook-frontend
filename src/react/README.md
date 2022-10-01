@@ -1,5 +1,9 @@
 # React
 
+- 🔷 Хуки с примерами https://my-js.org/docs/cheatsheet/react-hooks/  - отличная 📑
+- 📂 Инфа для Vue developer 📗 при переходе на React developer 📘 - аналоги по функциям https://badtry.net/pochiemu-ia-priedpochitaiu-react-a-nie-vue-react-vs-vue/
+<hr>
+
 - React - https://reactjs.org/ 
 - React Routers - https://reactrouter.com/ru/main
 - Redux - https://redux.js.org/ (state container)
