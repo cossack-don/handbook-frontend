@@ -4,6 +4,73 @@
 - 📂 Инфа для Vue developer 📗 при переходе на React developer 📘 - аналоги по функциям https://badtry.net/pochiemu-ia-priedpochitaiu-react-a-nie-vue-react-vs-vue/
 <hr>
 
+### Core methods: Data, Methods, Computed, Watch , Life cycle
+
+#### Data vs useState React Hook
+✅
+```html
+<template>
+  <button @click="count++">
+    You clicked me {{ count }} times.
+  </button>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      count: 0
+    }
+  }
+};
+</script>
+```
+
+☑️ useState, который возвращает массив из двух элементов: содержащий текущее значение состояния и функцию-сеттер.
+```html
+import { useState } from 'react';
+
+export default function ButtonCounter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      {count}
+    </button>
+  );
+}
+</script>
+```
+
+☑️ Вы можете выбрать, желаете ли вы распределить состояние между несколькими вызовами useState, или оставить его в одном объекте.
+
+```html
+import { useState } from 'react';
+
+export default function ProfileForm() {
+  const [name, setName] = useState('Sebastian');
+  const [email, setEmail] = useState('sebastian@spatie.be');
+
+  // ...
+}
+```
+☑️
+```html
+import { useState } from 'react';
+
+export default function ProfileForm() {
+  const [values, setValues] = useState({
+    name: 'Sebastian',
+    email: 'sebastian@spatie.be'
+  });
+
+  // ...
+}
+</script>
+```
+#### Computed vs useMemo React Hook
+
+
 ### ✅ v-for vs array.map и v-for vs Object.entries
 
 ```html
