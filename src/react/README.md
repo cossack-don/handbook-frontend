@@ -68,9 +68,42 @@ export default function ProfileForm() {
 }
 </script>
 ```
-#### Computed vs useMemo React Hook
 
+####  Computed vs useMemo React Hook (Вычисляемые свойства)
 
+ ```html
+<template>
+  <p>{{ reversedMessage }}</p>
+</template>
+
+<script>
+export default {
+  props: ['message'],
+
+  computed: {
+    reversedMessage() {
+      return this.message.split('').reverse().join('');
+    }
+  }
+};
+</script>
+```
+
+Если речь идет о производительности, вычисления могут быть завернуты в useMemo хук. <br/>
+useMemo нужно передать функцию обратного вызова, которая возвращает вычисленный  <br/>
+результат, и массив зависимостей. <br/>
+
+ ```html
+import { useMemo } from 'react';
+
+export default function ReversedMessage({ message }) {
+  const reversedMessage = useMemo(() => {
+    return message.split('').reverse().join('');
+  }, [message]);
+
+  return <p>{reversedMessage}</p>;
+}
+```
 ### ✅ v-for vs array.map и v-for vs Object.entries
 
 ```html
