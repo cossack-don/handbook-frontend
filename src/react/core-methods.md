@@ -1,12 +1,12 @@
 # Список основных методов React
 
 - Data - useState
-- Methods - arrow-fucntions
+- Methods - Arrow Fucntions () => 
 - Computed - useMemo
-- Watch - ?
+- Watch - useEffect
 - Life cycle - ?
 - Events(События) v-on, @click vs onClick, onChange - React
-- Props
+- Vue Props vs React Props
 
 ## Data vs useState React Hook
 
@@ -244,6 +244,100 @@ export default function Post({ title }) {
 }
 ```
 
-## Watch vs 
+## Watch vs useEffect Hook
+
+Наблюдатели идейно похожи на хуки на протяжении всего жизненного цикла: <br/>
+"Когда Х случается, делай Y". Наблюдателей концептуально не существует в React, <br/>
+но вы можете достичь того же самого эффекта с помощью useEffect <br/>
+
+```html
+✅ Vue
+<template>
+  <input type="checkbox" v-model="checked" />
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      checked: false
+    }
+  },
+
+  watch: {
+    checked(checked) {
+      syncWithServer(checked);
+    }
+  },
+
+  methods: {
+    syncWithServer(checked) {
+      // ...
+    }
+  }
+};
+</script>
+```
+
+```html
+☑️ React
+import { useEffect, useState } from 'react';
+
+export default function AjaxToggle() {
+  const [checked, setChecked] = useState(false);
+
+  function syncWithServer(checked) {
+    // ...
+  }
+
+  useEffect(() => {
+    syncWithServer(checked);
+  }, [checked]);
+
+  return (
+    <input
+      type="checkbox"
+      checked={checked}
+      onChange={() => setChecked(!checked)}
+    />
+  );
+}
+```
+
+⛔ Обратите внимание, что useEffect также запустится при первом рендеринге. <br/>
+Это то же самое, что и использование параметра immediate в Vue watcher. <br/>
+
+Если вы не хотите, чтобы эффект работал при первом рендере, <br/>
+вам нужно будет создать ref, чтобы определить, случился первый рендеринг или нет. <br/>
+
+```html
+☑️ React
+import { useEffect, useRef, useState } from 'react';
+
+export default function AjaxToggle() {
+  const [checked, setChecked] = useState(false);
+  const firstRender = useRef(true);
+
+  function syncWithServer(checked) {
+    // ...
+  }
+
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    syncWithServer(checked);
+  }, [checked]);
+
+  return (
+    <input
+      type="checkbox"
+      checked={checked}
+      onChange={() => setChecked(!checked)}
+    />
+  );
+}
+```
 
 ## Life cycle vs
