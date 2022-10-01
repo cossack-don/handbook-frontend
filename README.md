@@ -3,6 +3,8 @@
 
 ### <a href="https://cossack-don.github.io/handbook-frontend/" target="_blank">Handbook-frontend prodaction<a/>
 
+## React - актуальное для заполнения <a href="https://github.com/cossack-don/handbook-frontend/tree/main/src/react" target="_blank">React docs</a>
+
 ### Разделы:
 <ul>
     <li>JavaScript ES6</li>
