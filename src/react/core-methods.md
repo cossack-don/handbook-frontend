@@ -6,6 +6,7 @@
 - Watch - ?
 - Life cycle - ?
 - Events(События) v-on, @click vs onClick, onChange - React
+- Props
 
 ## Data vs useState React Hook
 
@@ -187,3 +188,62 @@ export default function PostForm({ onSave, onPublish }) {
   );
 }
 ```
+
+## Vue Props vs React Props
+
+Props в React ведут себя так же, как и Vue. <br/>
+Одна небольшая разница: компоненты React не наследуют неизвестные атрибуты.
+
+```html
+✅ Vue
+<template>
+  <h1>{{ title }}</h1>
+</template>
+
+<script>
+export default {
+  props: ['title'],
+};
+</script>
+```
+
+```html
+☑️ React
+<template>
+  <h1>{{ title }}</h1>
+</template>
+
+<script>
+export default {
+  props: ['title'],
+};
+</script>
+```
+
+Использование выражений в качестве props в Vue возможно с префиксом :, <br/>
+который является псевдонимом для директивы v-bind. <br/>
+React использует фигурные скобки для динамических значений. <br/>
+
+```html
+✅ Vue
+<template>
+  <post-title :title="title" />
+</template>
+
+<script>
+export default {
+  props: ['title'],
+};
+</script>
+```
+
+```html
+☑️ React
+export default function Post({ title }) {
+  return <PostTitle title={title} />;
+}
+```
+
+## Watch vs 
+
+## Life cycle vs
