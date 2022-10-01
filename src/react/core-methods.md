@@ -1,6 +1,13 @@
 # Список основных методов React
 
-#### Data vs useState React Hook
+- Data - useState
+- Methods - arrow-fucntions
+- Computed - useMemo
+- Watch - 
+- Life cycle
+- 
+
+## Data vs useState React Hook
 
 ```html
 ✅ Vue
@@ -51,8 +58,9 @@ export default function ProfileForm() {
   // ...
 }
 ```
-☑️
+
 ```html
+☑️ React
 import { useState } from 'react';
 
 export default function ProfileForm() {
@@ -65,3 +73,80 @@ export default function ProfileForm() {
 }
 </script>
 ```
+
+## Methods vs functions React
+
+```html
+✅ Vue
+<template>
+  <button onClick="doSomething">
+    Do something!
+  </button>
+</template>
+
+<script>
+export default {
+  methods: {
+    doSomething() {
+      // ...
+    }
+  }
+};
+</script>
+```
+
+В React вы можете объявить нативные функции внутри компонента, к которым можно обратиться.
+```html
+☑️ React
+export default function ImportantButton() {
+  function doSomething() {
+    // ...
+  }
+
+  return (
+    <button onClick={doSomething}>
+      Do something!
+    </button>
+  );
+}
+```
+
+##  Computed vs useMemo React Hook (Вычисляемые свойства)
+
+ ```html
+✅ Vue
+<template>
+  <p>{{ reversedMessage }}</p>
+</template>
+
+<script>
+export default {
+  props: ['message'],
+
+  computed: {
+    reversedMessage() {
+      return this.message.split('').reverse().join('');
+    }
+  }
+};
+</script>
+```
+
+Если речь идет о производительности, вычисления могут быть завернуты в useMemo хук. <br/>
+useMemo нужно передать функцию обратного вызова, которая возвращает вычисленный  <br/>
+результат, и массив зависимостей. <br/>
+
+ ```html
+☑️ React
+import { useMemo } from 'react';
+
+export default function ReversedMessage({ message }) {
+  const reversedMessage = useMemo(() => {
+    return message.split('').reverse().join('');
+  }, [message]);
+
+  return <p>{reversedMessage}</p>;
+}
+```
+
+## События (Events) v-on, @click vs onClick React
