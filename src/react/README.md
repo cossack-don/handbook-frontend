@@ -1,6 +1,6 @@
 # React
 
-- <a href="https://github.com/cossack-don/handbook-frontend/blob/main/src/react/core-methods">Основные методы Core methods: Data, Methods, Computed, Watch , Life cycle, но на React Hooks</a>
+- <a href="https://github.com/cossack-don/handbook-frontend/blob/main/src/react/core-methods.md">Основные методы Core methods: Data, Methods, Computed, Watch , Life cycle, но на React Hooks</a>
 
 
 - 🔷 Хуки с примерами https://my-js.org/docs/cheatsheet/react-hooks/  - отличная 📑
