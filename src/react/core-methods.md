@@ -3,9 +3,9 @@
 - Data - useState
 - Methods - arrow-fucntions
 - Computed - useMemo
-- Watch - 
-- Life cycle
-- 
+- Watch - ?
+- Life cycle - ?
+- Events(События) v-on, @click vs onClick, onChange - React
 
 ## Data vs useState React Hook
 
@@ -150,3 +150,40 @@ export default function ReversedMessage({ message }) {
 ```
 
 ## События (Events) v-on, @click vs onClick React
+
+События, по сути, являются callback-ами, которые вызываются, когда что-то происходит <br/>
+в дочернем компоненте. Vue предоставляет возможность "прослушивать" события с помощью <br/>
+аннотации @, что является сокращением для директивы v-on. <br/>
+
+ ```html
+✅ Vue
+<template>
+  <form>
+    <button type="button" @click="$emit('save')">
+      Save
+    </button>
+    <button type="button" @click="$emit('publish')">
+      Publish
+    </button>
+  </form>
+</template>
+```
+
+События в React не особенного значения, они являются обычными props-функциями, <br/>
+которые будут вызываться дочерним компонентом при определённом событии. <br/>
+
+ ```html
+☑️ React
+export default function PostForm({ onSave, onPublish }) {
+  return (
+    <form>
+      <button type="button" onClick={onSave}>
+        Save
+      </button>
+      <button type="button" onClick={onPublish}>
+        Publish
+      </button>
+    </form>
+  );
+}
+```
