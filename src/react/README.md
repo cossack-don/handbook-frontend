@@ -1,10 +1,14 @@
 # React
 
+- <a href="https://github.com/cossack-don/handbook-frontend/blob/main/src/react/core-methods">Основные методы Core methods: Data, Methods, Computed, Watch , Life cycle, но на React Hooks</a>
+
+
+
+
 - 🔷 Хуки с примерами https://my-js.org/docs/cheatsheet/react-hooks/  - отличная 📑
 - 📂 Инфа для Vue developer 📗 при переходе на React developer 📘 - аналоги по функциям https://badtry.net/pochiemu-ia-priedpochitaiu-react-a-nie-vue-react-vs-vue/
 <hr>
 
-### Core methods: Data, Methods, Computed, Watch , Life cycle
 
 #### Data vs useState React Hook
 ✅
