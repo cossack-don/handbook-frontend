@@ -5,6 +5,7 @@
 - <a href="#">Работа внутри JSX</a>
 - 🔷 Хуки с примерами https://my-js.org/docs/cheatsheet/react-hooks/  - отличная 📑
 - 📂 Инфа для Vue developer 📗 при переходе на React developer 📘 - аналоги по функциям https://badtry.net/pochiemu-ia-priedpochitaiu-react-a-nie-vue-react-vs-vue/
+- 🔥 Хуки самописные https://github.com/streamich/react-use  - React-Use 📑 - <a href="https://streamich.github.io/react-use/?path=/story/components-usekey--demo" target="_blank">Примеры на StoryBook</a>
 <hr>
 
 ### ✅ Анимация v-Transitions vs React - её нет
