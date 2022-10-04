@@ -8,6 +8,8 @@
 - 🔥 Хуки самописные https://github.com/streamich/react-use  - React-Use 📑 - <a href="https://streamich.github.io/react-use/?path=/story/components-usekey--demo" target="_blank">Примеры на StoryBook</a>
 <hr>
 
+https://badtry.net/react-dlia-vue-razrabochikov/#event react vs vue альтернативы
+
 ### ✅ Анимация v-Transitions vs React - её нет
 
 React не имеет встроенных утилит для анимации. <br/>
